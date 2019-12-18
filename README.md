@@ -27,7 +27,7 @@ The three benchmark measurements:
 ### Thermal throttling affects GPU Performance
   - Across all model architectures, GPUs, batch sizes, and datasets, **SECOND-BATCH-TIME** (GPU just started running and is cool) is faster than **AVERAGE-BATCH-TIME** (GPU has been running a while and is hot) and **AVERAGE-BATCH-TIME** is faster than **SIMULTANEOUS-AVERAGE-BATCH-TIME** (multiple GPUs have been running a while next to each other and everything is very hot).
   - Decrease in performance is more significant from **AVERAGE-BATCH-TIME** to **SIMULTANEOUS-AVERAGE-BATCH-TIME** benchmarks.
-  - With heat dissipation from all four GPUs (**SIMULTANEOUS-AVERAGE-BATCH-TIME**), the TITAN RTX processed a CIFAR image every 27 microseconds.
+  - In the presence of heat dissipation from all four GPUs (**SIMULTANEOUS-AVERAGE-BATCH-TIME**), the TITAN RTX processed a CIFAR image every 27 microseconds, on average.
   - These results depends on the [case and cooling in the deep learning GPU rig](https://l7.curtisnorthcutt.com/build-pro-deep-learning-workstation) and [GPU positioning](https://l7.curtisnorthcutt.com/gpu-positioning).
 
 ### Batch-size affects Training Time
