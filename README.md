@@ -106,7 +106,7 @@ This measurement includes an additional column to designate the **position** of 
 
 Observe an overall decrease in performance compared to the two tables above due to thermal throttling caused by heat dissipation from all GPUs running simultaneously. However, RTX NVIDIA TITAN improves the **SIMULTANEOUS-AVERAGE-BATCH-TIME** by 30% when compared to the mid-bottom 2080 ti.
 
-### How does Batch Size effect Training Speed on ImageNet?
+### How does Batch Size affect Training Speed on ImageNet?
 
 The table below reports the [SECOND-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements) and [AVERAGE-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements) benchmarks for the **NVIDIA TITAN RTX**, run in isolation.
 
