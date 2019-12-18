@@ -108,13 +108,13 @@ Observe an overall decrease in performance compared to the two tables above due 
 
 ### How does Batch Size effect Training Speed on ImageNet?
 
-The table below reports the [SECOND-BATCH-TIME](#types-of-benchmark-measurements) and [AVERAGE-BATCH-TIME](#types-of-benchmark-measurements) benchmarks for the **NVIDIA TITAN RTX**, run in isolation.
+The table below reports the [SECOND-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements) and [AVERAGE-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements) benchmarks for the **NVIDIA TITAN RTX**, run in isolation.
 
 | Architecture | ResNet152 | ResNet152 | ResNet101 | ResNet50 | ResNet50 |
 | - | ---------- | ---------- | ---------- | --------- | --------- |
 | **Batch size** | **128** | **64** | **128** | **256** | **128** |
-| **[SECOND-BATCH-TIME](#types-of-benchmark-measurements)**  | 7.51 | 7.83 | 5.38 | 3.33 | 3.38 |
-| **[AVERAGE-BATCH-TIME](#types-of-benchmark-measurements)** | 7.66 | 7.95 | 5.44 | 3.41 | 3.42 |
+| **[SECOND-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements)**  | 7.51 | 7.83 | 5.38 | 3.33 | 3.38 |
+| **[AVERAGE-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements)** | 7.66 | 7.95 | 5.44 | 3.41 | 3.42 |
 
 Observe a slight (at most 4%) decrease in performance on smaller batch sizes for both **SECOND-BATCH-TIME** and **AVERAGE-BATCH-TIME** benchmarks.
 
@@ -147,7 +147,7 @@ python3 cifar100_train_crossval.py \
 
 #### AVERAGE-BATCH-TIME (CIFAR-100)
 
-For CIFAR, [AVERAGE-BATCH-TIME](#types-of-benchmark-measurements) is computed after the 15th epoch to compare with a similar number of total images trained as ImageNet.
+For CIFAR, [AVERAGE-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements) is computed after the 15th epoch to compare with a similar number of total images trained as ImageNet.
 
 | GPU | RESNET-152 | RESNET-101 | RESNET-50 | RESNET-18 |
 | --- | ---------- | ---------- | --------- | --------- |
@@ -192,7 +192,7 @@ python3 cifar10_train_crossval.py \
 
 #### AVERAGE-BATCH-TIME (CIFAR-10)
 
-Like CIFAR-100, [AVERAGE-BATCH-TIME](#types-of-benchmark-measurements) is computed after the 15th epoch.
+Like CIFAR-100, [AVERAGE-BATCH-TIME](#to-account-for-thermal-throttling-i-use-three-timing-measurements) is computed after the 15th epoch.
 
 | GPU | RESNET-152 | RESNET-101 | RESNET-50 | RESNET-18 |
 | --- | ---------- | ---------- | --------- | --------- |
